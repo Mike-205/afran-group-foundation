@@ -1,5 +1,11 @@
+import Hero from "@/components/home/hero-section";
+import Navbar from "@/components/layout/navbar";
+
 export default function Home() {
-  return (
-    <div className={'text-2xl text-primary-700 font-black inset-shadow-lg shadow-primary-500/20'}>Hello World</div>
-  );
+    return (
+        <main className="max-w-2xl mx-auto p-6 space-y-8">
+            <Navbar />
+            <Hero />
+        </main>
+    );
 }
