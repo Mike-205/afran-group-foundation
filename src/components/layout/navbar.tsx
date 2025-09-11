@@ -4,9 +4,18 @@ import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Button } from "../common/buttons";
 import {Menu, X} from "lucide-react";
+import Link from "next/link";
 
 const Navbar: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
+
+    const links: { name: string; href: string }[] = [
+        { name: "Home", href: "/" },
+        { name: "About", href: "/about" },
+        { name: "Programs", href: "/programs" },
+        { name: "Get Involved", href: "/get-involved" },
+        { name: "Contact", href: "/contact" }
+    ]
 
     const menuIconVariants = {
         closed: { rotate: 0 },
@@ -34,7 +43,7 @@ const Navbar: React.FC = () => {
                     <div className="flex items-center">
                         <div className="flex-shrink-0">
                             <Image
-                                src="/assets/svg/logo.png"
+                                src="/assets/svg/Logo.png"
                                 alt="Afran Group Foundation Logo"
                                 width={48}
                                 height={48}
@@ -49,11 +58,9 @@ const Navbar: React.FC = () => {
                     {/* Navigation Links - Desktop */}
                     <div className="hidden lg:flex items-center">
                         <div className="ml-10 flex items-baseline space-x-4">
-                            <a href="#" className="px-3 py-2 text-sm font-medium text-gray-800 hover:text-primary-500">Home</a>
-                            <a href="#" className="px-3 py-2 text-sm font-medium text-gray-800 hover:text-primary-500">About</a>
-                            <a href="#" className="px-3 py-2 text-sm font-medium text-gray-800 hover:text-primary-500">Programs</a>
-                            <a href="#" className="px-3 py-2 text-sm font-medium text-gray-800 hover:text-primary-500">Get Involved</a>
-                            <a href="#" className="px-3 py-2 text-sm font-medium text-gray-800 hover:text-primary-500">Contact</a>
+                            {links.map(link => (
+                                <Link href={link.href} key={link.href} className="px-3 py-2 text-sm font-medium text-gray-800 hover:text-primary-500">{link.name}</Link>
+                            ))}
                         </div>
                     </div>
 
