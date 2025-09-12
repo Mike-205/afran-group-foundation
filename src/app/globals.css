@@ -97,6 +97,11 @@
     --color-gray-white: #FBFDFE;
     --color-gray-black: #0B1C26;
 
+    /* custom colors */
+    --color-yellow-light: #FCEDC6;
+    --color-yellow-dark: #F2C94C;
+    --color-primary-text: #1D2130;
+
     /* Typography - Font Families */
     --font-poppins: var(--font-poppins);
 
@@ -169,6 +174,9 @@
     --inset-shadow-lg: inset 0 4px 6px 0;
 
     --gradient-hero: linear-gradient(135deg, var(--color-primary-900) 0%, var(--color-primary-700) 100%);
+
+    /* widths */
+    --spacing-8xl: 96rem; /* 1536px */
 }
 
 @theme inline {
