@@ -36,30 +36,30 @@ const Navbar: React.FC = () => {
     };
 
     return (
-        <nav className="bg-gray-white shadow-md shadow-gray-700/8">
-            <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-0">
+        <nav className="z-40 fixed bg-gray-white shadow-gray-700/8 shadow-md w-full h-16">
+            <div className="mx-auto px-4 sm:px-6 lg:px-8 2xl:px-0 xl:px-10 max-w-7xl">
                 <div className="flex justify-between h-16">
                     {/* Logo and Brand Name */}
                     <div className="flex items-center">
                         <div className="flex-shrink-0">
                             <Image
-                                src="/assets/svg/Logo.png"
+                                src="/assets/icons/logo.png"
                                 alt="Afran Group Foundation Logo"
                                 width={48}
                                 height={48}
                             />
                         </div>
-                        <div className="ml-2 flex flex-col">
-                            <span className="text-primary-500 font-semibold text-lg lg:text-xl leading-tight">Afran Group</span>
-                            <span className="text-secondary-500 font-medium text-xs lg:text-sm leading-tight">Foundation</span>
+                        <div className="flex flex-col ml-2">
+                            <span className="font-semibold text-primary-500 text-lg lg:text-xl leading-tight">Afran Group</span>
+                            <span className="font-medium text-secondary-500 text-xs lg:text-sm leading-tight">Foundation</span>
                         </div>
                     </div>
 
                     {/* Navigation Links - Desktop */}
                     <div className="hidden lg:flex items-center">
-                        <div className="ml-10 flex items-baseline space-x-4">
+                        <div className="flex items-baseline space-x-4 ml-10">
                             {links.map(link => (
-                                <Link href={link.href} key={link.href} className="px-3 py-2 text-sm font-medium text-gray-800 hover:text-primary-500">{link.name}</Link>
+                                <Link href={link.href} key={link.href} className="px-3 py-2 font-medium text-gray-800 hover:text-primary-500 text-sm">{link.name}</Link>
                             ))}
                         </div>
                     </div>
@@ -73,7 +73,7 @@ const Navbar: React.FC = () => {
                     <div className="lg:hidden flex items-center">
                         <motion.button
                             onClick={() => setIsOpen(!isOpen)}
-                            className="inline-flex items-center justify-center p-2 rounded-md text-gray-800 hover:text-primary-500 focus:outline-none"
+                            className="inline-flex justify-center items-center p-2 rounded-md focus:outline-none text-gray-800 hover:text-primary-500"
                             aria-expanded={isOpen}
                             animate={isOpen ? "open" : "closed"}
                             variants={menuIconVariants}
@@ -81,9 +81,9 @@ const Navbar: React.FC = () => {
                         >
                             <span className="sr-only">Open main menu</span>
                             {!isOpen ? (
-                                <Menu className="h-6 w-6" />
+                                <Menu className="w-6 h-6" />
                             ) : (
-                                <X className="h-6 w-6" />
+                                <X className="w-6 h-6" />
                             )}
                         </motion.button>
                     </div>
@@ -100,14 +100,14 @@ const Navbar: React.FC = () => {
                         variants={mobileMenuVariants}
                         className="lg:hidden overflow-hidden"
                     >
-                        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                            <a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-primary-500">Home</a>
-                            <a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-primary-500">About</a>
-                            <a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-primary-500">Programs</a>
-                            <a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-primary-500">Get Involved</a>
-                            <a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-primary-500">Contact</a>
+                        <div className="space-y-1 px-2 sm:px-3 pt-2 pb-3">
+                            <a href="#" className="block px-3 py-2 rounded-md font-medium text-gray-800 hover:text-primary-500 text-base">Home</a>
+                            <a href="#" className="block px-3 py-2 rounded-md font-medium text-gray-800 hover:text-primary-500 text-base">About</a>
+                            <a href="#" className="block px-3 py-2 rounded-md font-medium text-gray-800 hover:text-primary-500 text-base">Programs</a>
+                            <a href="#" className="block px-3 py-2 rounded-md font-medium text-gray-800 hover:text-primary-500 text-base">Get Involved</a>
+                            <a href="#" className="block px-3 py-2 rounded-md font-medium text-gray-800 hover:text-primary-500 text-base">Contact</a>
                         </div>
-                        <div className="pt-4 pb-3 border-t border-gray-200">
+                        <div className="pt-4 pb-3 border-gray-200 border-t">
                             <div className="flex items-center px-5">
                                 <Button fullWidth>Donate Now</Button>
                             </div>
