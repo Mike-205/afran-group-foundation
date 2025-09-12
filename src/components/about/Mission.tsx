@@ -10,8 +10,8 @@ export default function Mission() {
         { name: "Supporter 6", logo: "/assets/icons/logo-6.svg" }
     ]
     return (
-        <section className="bg-yellow-light pt-[224px]">
-            <div className="flex justify-between mx-auto mt-20 w-full max-w-[1088px]">
+        <section className="bg-yellow-light px-4 2xl:px-0 pt-[128px] lg:pt-[224px]">
+            <div className="flex lg:flex-row flex-col justify-between gap-8 mx-auto mt-10 lg:mt-20 w-full max-w-[1088px]">
                 <div className="max-w-[496px]">
                     <h2 className="mb-3 font-bold">OUR MISSION</h2>
                     <h3 className="font-bold text-2xl leading-[150%]">We make sure to provide inclusive care for children with special needs</h3>

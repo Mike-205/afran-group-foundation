@@ -9,9 +9,9 @@ export default function Awards() {
     ];
 
     return (
-        <section className="mt-20 mb-16">
-            <h2 className="mb-12 font-bold text-5xl text-center leading-[120%]">Awards & Recognitions</h2>
-            <div className="flex justify-between mx-auto w-full max-w-[1114px]">
+        <section className="mt-20 mb-16 px-4 2xl:px-0">
+            <h2 className="mb-12 font-bold text-3xl lg:text-5xl text-center leading-[120%]">Awards & Recognitions</h2>
+            <div className="flex flex-wrap justify-center md:justify-between items-center gap-4 mx-auto w-full max-w-[1114px]">
                 {awards.map((award, index) => (
                     <div key={index} className="flex flex-col items-center space-y-1">
                         <Image src={award.imageUrl} alt={award.title} width={112} height={92} />
