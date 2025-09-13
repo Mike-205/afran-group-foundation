@@ -173,8 +173,6 @@
     --inset-shadow-md: inset 0 2px 4px 0;
     --inset-shadow-lg: inset 0 4px 6px 0;
 
-    --gradient-hero: linear-gradient(135deg, var(--color-primary-900) 0%, var(--color-primary-700) 100%);
-
     /* widths */
     --spacing-8xl: 96rem; /* 1536px */
 }

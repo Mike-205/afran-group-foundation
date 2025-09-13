@@ -36,7 +36,7 @@ const Navbar: React.FC = () => {
     };
 
     return (
-        <nav className="z-40 fixed bg-gray-white shadow-gray-700/8 shadow-md w-full h-16">
+        <nav className="top-32 sm:top-22 md:top-16 z-40 sticky bg-gray-white shadow-gray-700/8 shadow-md w-full h-16">
             <div className="mx-auto px-4 sm:px-6 lg:px-8 2xl:px-0 xl:px-10 max-w-7xl">
                 <div className="flex justify-between h-16">
                     {/* Logo and Brand Name */}
@@ -98,14 +98,12 @@ const Navbar: React.FC = () => {
                         animate="open"
                         exit="closed"
                         variants={mobileMenuVariants}
-                        className="lg:hidden overflow-hidden"
+                        className="lg:hidden bg-gray-white overflow-hidden"
                     >
                         <div className="space-y-1 px-2 sm:px-3 pt-2 pb-3">
-                            <a href="#" className="block px-3 py-2 rounded-md font-medium text-gray-800 hover:text-primary-500 text-base">Home</a>
-                            <a href="#" className="block px-3 py-2 rounded-md font-medium text-gray-800 hover:text-primary-500 text-base">About</a>
-                            <a href="#" className="block px-3 py-2 rounded-md font-medium text-gray-800 hover:text-primary-500 text-base">Programs</a>
-                            <a href="#" className="block px-3 py-2 rounded-md font-medium text-gray-800 hover:text-primary-500 text-base">Get Involved</a>
-                            <a href="#" className="block px-3 py-2 rounded-md font-medium text-gray-800 hover:text-primary-500 text-base">Contact</a>
+                            {links.map(link => (
+                                <Link onClick={() => {setIsOpen(false)}} href={link.href} key={link.name} className="block px-3 py-2 rounded-md font-medium text-gray-800 hover:text-primary-500 text-base">{link.name}</Link>
+                            ))}
                         </div>
                         <div className="pt-4 pb-3 border-gray-200 border-t">
                             <div className="flex items-center px-5">
