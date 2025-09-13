@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: "Afran Group Foundation",
   description: "Empowering Communities, Transforming Lives",
   icons: {
-    icon: "/assets/icons/logo.png",
+    icon: "/icons/logo.png",
   }
 };
 

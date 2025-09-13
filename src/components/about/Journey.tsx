@@ -22,7 +22,7 @@ export default function Journey() {
                     ))}
                 </div>
             </div>
-            <Image src={"/assets/images/journey.jpg"} alt="Our Team" width={612} height={448} className="rounded-3xl w-full max-w-[612px] max-h-[448px]" />
+            <Image src={"/images/journey.jpg"} alt="Our Team" width={612} height={448} className="rounded-3xl w-full max-w-[612px] max-h-[448px]" />
         </section>
     )
 }

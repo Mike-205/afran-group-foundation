@@ -17,7 +17,7 @@ export default function Hero() {
                 </div>
             </div>
             <div className="-bottom-[128px] lg:-bottom-[224px] left-0 absolute flex justify-center px-4 2xl:px-0 w-full">
-                <Image src={"/assets/images/video.jpg"} alt="team celebrating in the open" width={1280} height={448} className="rounded-3xl w-full max-w-[1280px] h-64 lg:h-[448px] object-cover" />
+                <Image src={"/images/video.jpg"} alt="team celebrating in the open" width={1280} height={448} className="rounded-3xl w-full max-w-[1280px] h-64 lg:h-[448px] object-cover" />
             </div>
         </section>
     )

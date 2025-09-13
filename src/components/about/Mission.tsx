@@ -2,13 +2,14 @@ import Image from "next/image";
 
 export default function Mission() {
     const supporters: { name: string; logo: string }[] = [
-        { name: "Supporter 1", logo: "/assets/icons/logo-1.svg" },
-        { name: "Supporter 2", logo: "/assets/icons/logo-2.svg" },
-        { name: "Supporter 3", logo: "/assets/icons/logo-3.svg" },
-        { name: "Supporter 4", logo: "/assets/icons/logo-4.svg" },
-        { name: "Supporter 5", logo: "/assets/icons/logo-5.svg" },
-        { name: "Supporter 6", logo: "/assets/icons/logo-6.svg" }
-    ]
+        { name: "Supporter 1", logo: "/icons/logo-1.svg" },
+        { name: "Supporter 2", logo: "/icons/logo-2.svg" },
+        { name: "Supporter 3", logo: "/icons/logo-3.svg" },
+        { name: "Supporter 4", logo: "/icons/logo-4.svg" },
+        { name: "Supporter 5", logo: "/icons/logo-5.svg" },
+        { name: "Supporter 6", logo: "/icons/logo-6.svg" }
+    ];
+
     return (
         <section className="bg-yellow-light px-4 2xl:px-0 pt-[128px] lg:pt-[224px]">
             <div className="flex lg:flex-row flex-col justify-between gap-8 mx-auto mt-10 lg:mt-20 w-full max-w-[1088px]">

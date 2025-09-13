@@ -1,10 +1,7 @@
+import { events } from "@/lib/data/events";
 import Image from "next/image";
 
 export default function Events() {
-    const events: { title: string; day: number; month: string; }[] = [
-        { title: "A day with our wonderful children", day: 13, month: "APR" },
-        { title: "Seminar: Caring for children with autism", day: 25, month: "APR" }
-    ];
 
     return (
         <section className="mx-auto mb-16 px-4 2xl:px-0 w-full max-w-7xl">
@@ -26,7 +23,7 @@ export default function Events() {
                             </div>
                             <p className="font-bold lg:text-[26px] text-xl leading-[150%]">{event.title}</p>
                         </div>
-                        <Image src={"/assets/icons/arrow-right-white-bg.svg"} alt="arrow right" width={56} height={56} />
+                        <Image src={"/icons/arrow-right-white-bg.svg"} alt="arrow right" width={56} height={56} />
                     </div>
                 ))}
             </div>
