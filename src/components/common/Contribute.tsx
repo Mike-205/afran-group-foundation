@@ -13,7 +13,7 @@ export default function Contribute() {
                         <Button variant="primary" className="bg-white hover:bg-yellow-dark font-medium text-black hover:cursor-pointer">Donate</Button>
                     </div>
                 </div>
-                <Image src={"/assets/images/contribute-2.jpg"} alt="children happy" width={1280} height={384} className="rounded-3xl w-full h-full object-bottom object-cover" />
+                <Image src={"/images/contribute.jpg"} alt="children happy" width={1280} height={384} className="rounded-3xl w-full h-full object-bottom object-cover" />
             </div>
         </section>
     )

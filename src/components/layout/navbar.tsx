@@ -36,14 +36,14 @@ const Navbar: React.FC = () => {
     };
 
     return (
-        <nav className="top-32 sm:top-22 md:top-16 z-40 sticky bg-gray-white shadow-gray-700/8 shadow-md w-full h-16">
+        <nav className="top-22 md:top-16 z-40 sticky bg-gray-white shadow-gray-700/8 shadow-md w-full h-16">
             <div className="mx-auto px-4 sm:px-6 lg:px-8 2xl:px-0 xl:px-10 max-w-7xl">
                 <div className="flex justify-between h-16">
                     {/* Logo and Brand Name */}
                     <div className="flex items-center">
                         <div className="flex-shrink-0">
                             <Image
-                                src="/assets/icons/logo.png"
+                                src="/icons/logo.png"
                                 alt="Afran Group Foundation Logo"
                                 width={48}
                                 height={48}

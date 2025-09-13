@@ -2,10 +2,10 @@ import Image from "next/image";
 
 export default function Awards() {
     const awards: { title: string; year: string; location: string; imageUrl: string }[] = [
-        { title: "Best NGO Award", year: "2021", location: "BERLIN, GERMANY", imageUrl: "/assets/icons/award-badge-1.svg" },
-        { title: "Global Award", year: "2018", location: "NEW YORK, USA", imageUrl: "/assets/icons/award-badge-2.svg" },
-        { title: "CSN Award", year: "2014", location: "NEW DELHI, INDIA", imageUrl: "/assets/icons/award-badge-3.svg" },
-        { title: "NGO of the year Award", year: "2010", location: "VIENNA, AUSTRIA", imageUrl: "/assets/icons/award-badge-4.svg" }
+        { title: "Best NGO Award", year: "2021", location: "BERLIN, GERMANY", imageUrl: "/icons/award-badge-1.svg" },
+        { title: "Global Award", year: "2018", location: "NEW YORK, USA", imageUrl: "/icons/award-badge-2.svg" },
+        { title: "CSN Award", year: "2014", location: "NEW DELHI, INDIA", imageUrl: "/icons/award-badge-3.svg" },
+        { title: "NGO of the year Award", year: "2010", location: "VIENNA, AUSTRIA", imageUrl: "/icons/award-badge-4.svg" }
     ];
 
     return (
