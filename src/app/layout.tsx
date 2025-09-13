@@ -4,6 +4,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import React from "react";
 import Navbar from "@/components/layout/navbar";
+import Emergency from "@/components/layout/Emergency";
 
 const poppins = Poppins({
     variable: "--font-poppins",
@@ -30,6 +31,7 @@ export default function RootLayout({
         className={`${poppins.variable} font-poppins bg-gray-white antialiased`}
         suppressHydrationWarning
       >
+        <Emergency />
         <Navbar />
         {children}
       </body>

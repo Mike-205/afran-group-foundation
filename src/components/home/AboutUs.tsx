@@ -1,8 +1,8 @@
 import Image from "next/image";
 
-export default function Hero() {
+export default function AboutUs() {
     return (
-        <section className="relative mx-auto px-4 2xl:px-0 pb-[128px] lg:pb-[224px] w-full max-w-7xl">
+        <section className="relative mx-auto px-4 2xl:px-0 pt-20 pb-[128px] lg:pb-[224px] w-full max-w-7xl">
             <div className="my-8 lg:my-12">
                 <div className="flex items-center gap-4 mb-5">
                     <span className="bg-black rounded-full w-[72px] h-[2px]"></span>
