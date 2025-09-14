@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Hero() {
     return (
         <section className="flex flex-wrap justify-between bg-yellow-light mx-auto px-4 2xl:px-0 py-8 w-full max-w-[120rem]">
-            <div className="flex lg:flex-row flex-col items-center w-full max-w-7xl">
+            <div className="flex lg:flex-row flex-col items-center mx-auto w-full max-w-7xl">
                 <div className="my-8 lg:my-12 w-full max-w-[704px]">
                     <div className="flex items-center gap-2 md:gap-4 mb-5">
                         <span className="bg-black rounded-full w-16 md:w-[72px] h-[2px]"></span>
