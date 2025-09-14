@@ -101,6 +101,7 @@
     --color-yellow-light: #FCEDC6;
     --color-yellow-dark: #F2C94C;
     --color-primary-text: #1D2130;
+    --color-secondary-text: #525560;
 
     /* Typography - Font Families */
     --font-poppins: var(--font-poppins);

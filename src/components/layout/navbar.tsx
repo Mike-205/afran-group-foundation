@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
     const links: { name: string; href: string }[] = [
         { name: "Home", href: "/" },
         { name: "About", href: "/about" },
-        { name: "Programs", href: "/programs" },
+        { name: "What We Do", href: "/what-we-do" },
         { name: "Get Involved", href: "/get-involved" },
         { name: "Contact", href: "/contact" }
     ]
