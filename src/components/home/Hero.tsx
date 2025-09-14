@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { Button } from '../common/buttons';
 
 export default function Hero () {
-    const backgroundImage = "/images/hero-image.png";
+    const backgroundImage = "/images/hero-image.jpg";
 
     return (
         <section className="relative flex justify-center items-center mx-auto -mt-38 md:-mt-32 pt-38 md:pt-16 w-full max-w-[120rem] h-screen overflow-hidden">
