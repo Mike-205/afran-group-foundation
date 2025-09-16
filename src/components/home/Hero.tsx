@@ -27,12 +27,12 @@ export default function Hero () {
             {/* Content */}
             <div className="z-30 relative mx-auto px-4 text-center container">
                 <div className="mx-auto max-w-4xl">
-                    <h1 className="mb-6 font-bold text-white text-3xl sm:text-4xl md:text-6xl leading-tight">
+                    <h1 className="mb-6 font-bold text-gray-white text-3xl sm:text-4xl md:text-6xl leading-tight">
                         Protecting Every Child&lsquo;s Right to{" "}
-                        <span className="text-yellow-200">Safety and Dignity</span>
+                        <span className="text-warning-300">Safety and Dignity</span>
                     </h1>
 
-                    <p className="mx-auto mb-8 max-w-3xl text-white/90 text-lg sm:text-xl md:text-2xl leading-tight sm:leading-relaxed">
+                    <p className="mx-auto mb-8 max-w-3xl text-gray-white/90 text-lg sm:text-xl md:text-2xl leading-tight sm:leading-relaxed">
                         Breaking the silence on child abuse through advocacy, support, and systemic change across Kenya and Africa
                     </p>
 
@@ -48,7 +48,8 @@ export default function Hero () {
             </div>
 
             {/* Decorative Elements */}
-            <div className="bottom-0 left-0 z-20 absolute bg-gradient-to-t from-white/80 via-white/50 to-transparent w-full h-12 md:h-20" />
+            <div className="bottom-0 left-0 z-20 absolute bg-gradient-to-t from-gray-white/80 via-gray-white/50 to-transparent w-full h-12 md:h-20" />
         </section>
     );
 };
+// Buttons need modification

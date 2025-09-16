@@ -11,17 +11,17 @@ export default function Mission() {
     ];
 
     return (
-        <section className="bg-yellow-light px-4 2xl:px-0 pt-[128px] lg:pt-[224px]">
+        <section className="bg-primary-100 px-4 2xl:px-0 pt-[128px] lg:pt-[224px]">
             <div className="flex lg:flex-row flex-col justify-between gap-8 mx-auto mt-10 lg:mt-20 w-full max-w-[1088px]">
                 <div className="max-w-[496px]">
-                    <h2 className="mb-3 font-bold">OUR MISSION</h2>
-                    <h3 className="font-bold text-2xl leading-[150%]">We make sure to provide inclusive care for children with special needs</h3>
-                    <p className="mt-3 leading-[160%]">To create a safe world for all children by preventing child abuse, empowering survivors, and advocating for systemic change that protects the most vulnerable in our communities.</p>
+                    <h2 className="text-gray-black mb-2 font-bold">OUR MISSION</h2>
+                    <h3 className="text-gray-black font-bold text-2xl leading-[150%]">We make sure to provide inclusive care for children with special needs</h3>
+                    <p className="text-gray-700 mt-2 leading-[160%]">To create a safe world for all children by preventing child abuse, empowering survivors, and advocating change that protects the most vulnerable in our communities.</p>
                 </div>
                 <div className="max-w-[496px]">
-                    <h2 className="mb-3 font-bold">OUR VISION</h2>
-                    <h3 className="font-bold text-2xl leading-[150%]">Provide more inclusive care to children around the world</h3>
-                    <p className="mt-3 leading-[160%]">A future where every child grows up free from abuse, with access to safety, dignity, and the support they need to heal, thrive, and reach their full potential.</p>
+                    <h2 className="text-gray-black mb-2 font-bold">OUR VISION</h2>
+                    <h3 className="text-gray-black font-bold text-2xl leading-[150%]">Provide more inclusive care to children around the world</h3>
+                    <p className="text-gray-700 mt-2 leading-[160%]">A future where every child grows up free from abuse, with access to safety, dignity, and the support they need to heal, thrive, and reach their full potential.</p>
                 </div>
             </div>
             <div className="mx-auto py-20 max-w-7xl">

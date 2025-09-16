@@ -5,44 +5,39 @@ import { ChartConfig } from "../ui/chart";
 
 export default function Donation() {
     const chartData: { fill: string; title: string; percentage: number; }[] = [
-        { fill: "#BEF3C0", title: "child care home", percentage: 40 },
-        { fill: "#AC94F1", title: "cleanliness program", percentage: 35 },
-        { fill: "#F38FBF", title: "helping people", percentage: 10 },
-        { fill: "#F9CF64", title: "excursions", percentage: 10 },
-        { fill: "#FFF0CA", title: "feeding the poor", percentage: 5 },
+        { fill: "#78bce8", title: "child care home", percentage: 40 },
+        { fill: "#c662bb", title: "cleanliness program", percentage: 25 },
+        { fill: "#debd59", title: "helping people", percentage: 20 },
+        { fill: "#45b56d", title: "excursions", percentage: 15 },
     ];
     const chartConfig = {
         title: {
             label: "Donation Distribution",
         },
-        "child care home": {
-            label: "Child Care Home",
+        "direct child support": {
+            label: "Direct Child Support",
             color: "var(--chart-1)",
         },
-        "cleanliness program": {
-            label: "Cleanliness Program",
+        "counseling & education": {
+            label: "Counseling & Education",
             color: "var(--chart-2)",
         },
-        "helping people": {
-            label: "Helping People",
+        "advocacy & legal aid": {
+            label: "Advocacy & Legal Aid",
             color: "var(--chart-3)",
         },
-        excursions: {
-            label: "Excursions",
-            color: "var(--chart-4)",
-        },
-        "feeding the poor": {
-            label: "Feeding the Poor",
+        "operations & sustainability": {
+            label: "Operations & Sustainability",
             color: "var(--chart-5)",
         },
     } satisfies ChartConfig;
 
     return (
-        <section className="bg-black mx-auto mb-12 md:mb-20 px-4 2xl:px-0 w-full max-w-[120rem] text-gray-white">
+        <section className="bg-gray-black mx-auto mb-12 md:mb-20 px-4 2xl:px-0 w-full max-w-[120rem] text-gray-white">
             <div className="flex flex-wrap justify-between mx-auto py-20 w-full max-w-7xl">
                 <div className="w-full max-w-[634px]">
                     <h2 className="font-bold text-4xl md:text-5xl leading-[120%]">How we spend your donations and where it goes</h2>
-                    <p className="opacity-60 mt-4 md:mt-6 leading-[160%]">We understand that when you make a donation, you want to know exactly where your money is going and we pledge to be transparent.</p>
+                    <p className="text-gray-500 mt-4 md:mt-6 leading-[160%]">We understand that when you make a donation, you want to know exactly where your money is going and we pledge to be transparent.</p>
                     <div className="flex flex-wrap gap-2 space-x-4 mt-4 md:mt-6">
                         {chartData.map((data) => (
                             <div key={data.title} className="flex items-center gap-2 w-full sm:w-fit">
