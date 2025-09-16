@@ -3,7 +3,7 @@ import { Button } from "./buttons";
 
 export default function Contribute() {
     return (
-        <section className="mx-auto mb-10 lg:mb-20 px-4 2xl:px-0 w-full max-w-[1280px] h-[384px]">
+        <section className="mx-auto mb-10 lg:mb-20 px-4 2xl:px-0 w-full max-w-[1280px] h-[420px]">
             <div className="relative rounded-3xl w-full h-full">
                 <div className="absolute bg-black opacity-60 rounded-3xl w-full h-full"></div>
                 <div className="z-20 absolute flex flex-col justify-center items-center gap-8 rounded-3xl w-full h-full">
