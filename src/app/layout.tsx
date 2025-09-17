@@ -4,8 +4,8 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import React from "react";
 import Emergency from "@/components/layout/Emergency";
-import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import Navbar from "@/components/layout/Navbar";
 
 const poppins = Poppins({
     variable: "--font-poppins",
