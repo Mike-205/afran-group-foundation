@@ -5,7 +5,7 @@ import "./globals.css";
 import React from "react";
 import Emergency from "@/components/layout/Emergency";
 import Footer from "@/components/layout/Footer";
-import Navbar from "@/components/layout/Navbar";
+import Navbar from "@/components/layout/RootNavbar";
 
 const poppins = Poppins({
     variable: "--font-poppins",
