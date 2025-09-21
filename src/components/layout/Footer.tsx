@@ -22,7 +22,7 @@ export default function Footer() {
     ];
 
     return (
-        <footer className="bg-[#0B0706] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-0 xl:px-10 py-12 md:py-20 w-full max-w-[120rem] text-white">
+        <footer className="bg-gray-black mx-auto px-4 sm:px-6 lg:px-8 2xl:px-0 xl:px-10 py-12 md:py-20 w-full max-w-[120rem] text-white">
             <div className="flex flex-wrap justify-center lg:justify-between gap-4 mx-auto w-full max-w-7xl">
                 <div className="flex">
                     <div className="flex-shrink-0">
@@ -68,7 +68,7 @@ export default function Footer() {
                     <h3 className="font-bold text-xl leading-[160%]">Subscribe to get latest updates</h3>
                     <div className="flex items-center gap-2 w-full max-w-sm">
                         <Input type="email" placeholder="Email" />
-                        <Button type="submit" variant="outline" className="text-black">
+                        <Button type="submit" variant="outline" className="text-gray-black">
                             Subscribe
                         </Button>
                     </div>

@@ -10,7 +10,7 @@ export default function Map () {
     }, []);
 
     return (
-        <section className="flex justify-center items-center mx-auto px-4 [1660px]:px-0 w-full max-w-[100rem] overflow-clip">
+        <section className="flex justify-center items-center mx-auto mb-8 px-4 [1660px]:px-0 w-full max-w-[100rem] overflow-clip">
             {isClient && (
                 <iframe
                     width="100%"

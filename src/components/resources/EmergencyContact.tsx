@@ -2,27 +2,72 @@ import { Phone } from "lucide-react";
 import Link from "next/link";
 
 export default function EmergencyContact() {
-    const contacts: { name: string; number: string; description: string }[] = [
-        { name: "National Child Helpline", number: "116", description: "A 24/7 free service for children to report abuse, neglect, get counselling, be linked to child protection, legal aid, shelter etc." },
-        { name: "Directorate of Criminal Investigations - Anti-Human Trafficking & Child Protection Unit (AHTCPU)", number: "0800 722 203", description: "Specialised law-enforcement unit investigating crimes against children, human trafficking and protecting children's rights." },
-        { name: "Child Welfare Society of Kenya (CWSK) - Emergency Rescue Services", number: "+254 713 908 835", description: "Provides rescue services for children in dangerous situations, along with medical, psychological, legal support, and placing children in safe environments." },
+    const contacts = [
+        {
+            title: "National Child Helpline",
+            number: "116",
+            description: "A free service for children to report abuse, neglect and get counselling, linked to child protection and legal aid",
+            available: "Available 24/7"
+        },
+        {
+            title: "Child Welfare Society of Kenya",
+            number: "+254 713 908 835",
+            description: "Provides rescue services for children in dangerous situations, along with psychological and legal support.",
+            available: "Available 24/7"
+        },
+        {
+            title: "Directorate of Criminal Investigation",
+            number: "0800 722 203",
+            description: "A law-enforcement unit investigating crimes against children and protecting children's rights.",
+            available: "Available 24/7"
+        },
+        {
+            title: "Directorate of Criminal Investigation",
+            number: "0800 722 203",
+            description: "A law-enforcement unit investigating crimes against children and protecting children's rights.",
+            available: "Available 24/7"
+        },
     ];
 
     return (
-        <section className="mx-auto my-10 lg:my-20 w-full max-w-7xl">
-            <h2 className="font-bold text-primary-text text-3xl lg:text-5xl text-center leading-[120%]">Emergency Contacts</h2>
-            <div className="flex flex-wrap justify-center gap-8 mt-8">
-                {contacts.map((contact, index) => (
-                    <div key={index} className="relative flex flex-col justify-end gap-4 bg-white shadow-sm p-4 rounded-2xl w-full max-w-sm h-[26rem] font-medium text-primary-text text-sm text-center leading-[160%]">
-                        <Phone className="mx-auto mb-auto text-error-500" size={48} />
-                        <h3 className="top-20 right-0 left-0 absolute mb-auto px-4 text-lg text-center">{contact.name}</h3>
-                        <p className="text-error-500 text-2xl">{contact.number}</p>
-                        <p className="">{contact.description}</p>
-                        <p className="mx-auto px-4 rounded-full outline outline-gray-200 w-fit">24/7</p>
-                        <Link href={`tel:${contact.number}`} className="bg-error-500 hover:bg-error-600 px-4 py-2 rounded-lg max-h-fit text-white text-center">Call Now</Link>
-                    </div>
-                ))}
+        <section className="mx-auto px-4 2xl:px-0 py-16 md:py-24 w-full max-w-[120rem]">
+            <div className="mx-auto w-full max-w-7xl">
+                <h2 className="text-gray-black w-full font-bold text-3xl lg:text-4xl text-center mb-3">Emergency Contacts</h2>
+                <p className="text-gray-600 text-center max-w-xl mx-auto mb-12">Immediate assistance resources for child protection cases</p>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+                    {contacts.map((contact, index) => (
+                        <div
+                            key={index}
+                            className="bg-white border border-gray-100 shadow-md shadow-gray-600/10 hover:shadow-lg p-6 rounded-2xl w-full transition-all duration-300 hover:-translate-y-1 flex flex-col h-full"
+                        >
+                            <div className="flex justify-between items-center mb-4 w-full">
+                                <div className="p-3 bg-error-50 rounded-xl">
+                                    <Phone className="text-error-500" size={24} />
+                                </div>
+                                <div className="px-3 py-1 rounded-full bg-green-100 text-green-500 font-medium text-xs flex items-center gap-1">
+                                    <div className="size-2 rounded-full bg-green-400 animate-pulse"></div>
+                                    {contact.available}
+                                </div>
+                            </div>
+
+                            <h3 className="mb-3 font-bold text-lg text-gray-800 line-clamp-2">{contact.title}</h3>
+                            <p className="text-error-500 text-xl font-medium mb-3">{contact.number}</p>
+                            <p className="text-gray-600 text-sm leading-relaxed mb-4 flex-grow line-clamp-3">{contact.description}</p>
+
+                            <div className="mt-auto">
+                                <Link
+                                    href={`tel:${contact.number}`}
+                                    className="flex justify-center items-center bg-gradient-to-r from-error-500 to-error-400/90 hover:from-error-600 hover:to-error-500/90 px-4 py-3 rounded-lg w-full text-white font-medium text-sm transition-colors duration-300 group"
+                                >
+                                    <Phone className="mr-2 group-hover:animate-pulse" size={18} />
+                                    Call Now
+                                </Link>
+                            </div>
+                        </div>
+                    ))}
+                </div>
             </div>
         </section>
-    )
+    );
 }

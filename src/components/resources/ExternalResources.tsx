@@ -9,12 +9,12 @@ export default function ExternalResources() {
     ];
 
     return (
-        <section className="bg-primary-100 mx-auto px-4 2xl:px-0 py-12 md:py-20 w-full max-w-[120rem]">
-            <div className="mx-auto w-full max-w-4xl">
-                <h2 className="w-full font-bold text-3xl lg:text-4xl text-center">External Resources</h2>
+        <section className="mx-auto px-4 2xl:px-0 py-12 md:py-20 w-full max-w-[120rem]">
+            <div className="mx-auto w-full max-w-5xl">
+                <h2 className="text-gray-black w-full font-bold text-3xl lg:text-4xl text-center">External Resources</h2>
                 <div className="space-y-4 mt-8">
                     {links.map((link, index) => (
-                        <div key={index} className="flex md:flex-row flex-col justify-between bg-white shadow-sm hover:shadow-md p-6 rounded-2xl h-full transition-shadow">
+                        <div key={index} className="flex md:flex-row flex-col justify-between bg-white border border-gray-100 p-6 rounded-2xl shadow-md shadow-gray-600/10 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 h-full">
                             <div>
                                 <h3 className="mb-2 font-bold text-lg">{link.name}</h3>
                                 <p className="text-primary-text text-sm leading-[160%]">{link.description}</p>

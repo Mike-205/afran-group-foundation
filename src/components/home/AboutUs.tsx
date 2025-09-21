@@ -29,7 +29,7 @@ export default function AboutUs() {
                     </div>
                 </div>
                 <div className="flex items-center justify-center lg:justify-end mx-auto px-4 2xl:px-0 w-full max-w-[480px] mt-6 lg:mt-0">
-                    <Image src={"/images/home-about.jpg"} alt="team celebrating in the open" width={480} height={578} className="rounded-3xl object-cover shadow-md" />
+                    <Image src={"/images/image-2.jpg"} alt="team celebrating in the open" width={480} height={578} className="rounded-3xl object-cover shadow-md" />
                 </div>
             </div>
 

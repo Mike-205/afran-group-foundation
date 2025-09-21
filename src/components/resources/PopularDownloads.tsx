@@ -1,8 +1,9 @@
 import { Download, FileText } from "lucide-react";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function PopularDownloads() {
-    const files: { name: string; description: string; type: string; size: string; downloads: number; url: string }[] = [
+    const files = [
         {
             name: "Guidelines for Child Protection Case Management and Referral in Kenya",
             description: "Reference material for actors on managing cases of child protection, and how to make referrals.",
@@ -38,30 +39,54 @@ export default function PopularDownloads() {
     ];
 
     return (
-        <section className="bg-primary-200 mx-auto px-4 2xl:px-0 py-12 md:py-20 w-full max-w-[120rem]">
-            <div className="mx-auto w-full max-w-4xl">
-                <h2 className="w-full font-bold text-3xl lg:text-4xl text-center">Popular Downloads</h2>
-                <div className="flex flex-wrap justify-center gap-4 mt-8">
+        <section className="bg-primary-100 mx-auto px-4 2xl:px-0 py-16 md:py-24 w-full max-w-[120rem]">
+            <div className="mx-auto w-full max-w-7xl">
+                <h2 className="text-gray-black w-full font-bold text-3xl lg:text-4xl text-center mb-3">Popular Downloads</h2>
+                <p className="text-gray-600 text-center max-w-xl mx-auto mb-12">Access our most frequently downloaded resources</p>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
                     {files.map((file, index) => (
-                        <div key={index} className="bg-white shadow-sm hover:shadow-md p-4 rounded-2xl w-full max-w-sm transition-shadow">
-                            <div className="flex justify-between mb-2 w-full">
-                                <FileText className="text-black" size={32} />
-                                <p className="px-2 rounded-xl outline outline-gray-200 h-fit text-primary-text text-sm leading-[160%]">{file.type}</p>
+                        <div
+                            key={index}
+                            className="bg-white border border-gray-100 shadow-md shadow-gray-600/10 hover:shadow-lg p-6 rounded-2xl w-full transition-all duration-300 hover:-translate-y-1 flex flex-col h-full"
+                        >
+                            <div className="flex justify-between items-center mb-4 w-full">
+                                <div className="p-3 bg-primary-50 rounded-xl">
+                                    <FileText className="text-primary-600" size={24} />
+                                </div>
+                                <span className="px-3 py-1 rounded-full bg-secondary-100 text-secondary-400 font-medium text-xs">
+                                    {file.type}
+                                </span>
                             </div>
-                            <h3 className="mb-2 font-bold text-lg">{file.name}</h3>
-                            <p className="text-primary-text text-sm leading-[160%]">{file.description}</p>
-                            <div className="flex justify-between mt-4">
-                                <p className="text-primary-text text-sm leading-[160%]">{file.size}</p>
-                                <p className="text-gray-500 text-sm leading-[160%]"><Download className="inline mr-1 mb-1" size={16} /> {file.downloads} Downloads</p>
-                            </div>
-                            <Link href={file.url} target="_blank" rel="noopener noreferrer" className="flex justify-center items-center bg-gradient-to-r from-yellow-400 hover:from-yellow-500 to-yellow-500 hover:to-yellow-600 mt-4 px-4 py-2 border rounded-lg min-w-fit h-fit text-white text-sm">
-                                <Download className="mr-1 mb-0.5" size={16} />
-                                <p>Download</p>
+
+                            <h3 className="mb-3 font-bold text-lg text-gray-800 line-clamp-2">{file.name}</h3>
+                            <p className="text-gray-600 text-sm leading-relaxed mb-4 flex-grow line-clamp-3">{file.description}</p>
+
+                            <div className="border-t border-gray-100 pt-4 mt-auto">
+                                <div className="flex justify-between items-center mb-4">
+                                    <div className="flex items-center text-gray-500 text-sm">
+                                        <span className="font-medium">{file.size}</span>
+                                    </div>
+                                    <div className="flex items-center text-gray-500 text-sm">
+                                        <Download className="mr-1" size={14} />
+                                        <span>{file.downloads.toLocaleString()}</span>
+                                    </div>
+                                </div>
+
+                                <Link
+                                    href={file.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex justify-center items-center bg-gradient-to-r from-blue-500 to-blue-400/90 hover:from-blue-600 hover:to-blue-500/90 px-4 py-3 rounded-lg w-full text-white font-medium text-sm transition-colors duration-300 group"
+                                >
+                                    <Download className="mr-2 group-hover:animate-bounce" size={18} />
+                                    Download Now
                                 </Link>
+                            </div>
                         </div>
                     ))}
                 </div>
             </div>
         </section>
-    )
+    );
 }

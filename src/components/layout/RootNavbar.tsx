@@ -111,7 +111,11 @@ const Navbar: React.FC = () => {
                         </div>
                         <div className="pt-4 pb-3 border-gray-200 border-t">
                             <div className="flex items-center px-5">
-                                <Button fullWidth>Donate Now</Button>
+                                <Button fullWidth onClick={() => {setIsOpen(false)}}>
+                                    <Link href={"/donation"}>
+                                        Donate Now
+                                    </Link>
+                                </Button>
                             </div>
                         </div>
                     </motion.div>

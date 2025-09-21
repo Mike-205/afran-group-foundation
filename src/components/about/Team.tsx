@@ -15,13 +15,13 @@ export default function Team() {
 
     return (
         <section className="mx-auto my-10 lg:my-20 w-full max-w-7xl">
-            <h2 className="font-bold text-primary-text text-3xl lg:text-5xl text-center leading-[120%]">Meet our team</h2>
+            <h2 className="font-bold text-gray-black text-3xl lg:text-5xl text-center leading-[120%]">Meet our team</h2>
             <div className="hidden lg:flex flex-wrap justify-center gap-8 mt-8">
                 {teamMembers.map((member, index) => (
                     <div key={index}>
                         <Image src={member.imageUrl} alt={member.name} width={296} height={320} className="rounded-3xl" />
-                        <h3 className="font-medium text-primary-text text-xl text-center leading-[160%]">{member.name}</h3>
-                        <p className="font-medium text-primary-text text-xs text-center leading-[160%]">{member.role}</p>
+                        <h3 className="font-medium text-gray-black text-xl text-center leading-[160%]">{member.name}</h3>
+                        <p className="font-medium text-gray-700 text-xs text-center leading-[160%]">{member.role}</p>
                         <div className="flex justify-center gap-4 mt-2">
                             {["/icons/facebook.svg", "/icons/twitter.svg", "/icons/linkedin.svg"].map((icon, idx) => (
                                 <Image key={idx} src={icon} alt="social icon" width={20} height={20} />
