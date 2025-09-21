@@ -20,7 +20,7 @@ export default function Hero() {
                             <h2 className="font-bold text-gray-black text-2xl leading-[160%]">Let&lsquo;s talk!</h2>
                             <div className="flex flex-wrap space-x-8 text-gray-black leading-[28px]">
                                 <p>+254 798 654 685</p>
-                                <p className={"text-primary-500"}>info@afrangroupfoundation.com</p>
+                                <p className={"text-primary-500"}>info@theafrangroupfoundation.org</p>
                             </div>
                         </div>
                         <div>
