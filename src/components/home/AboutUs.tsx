@@ -22,7 +22,7 @@ export default function AboutUs() {
                     <div className="flex flex-col justify-end gap-5 md:gap-6 ml-6 md:ml-[88px]">
                         <h1 className="text-gray-black font-bold text-2xl md:text-4xl lg:text-5xl leading-[120%]">We make sure to provide inclusive care for children</h1>
                         <div className="space-y-5 md:space-y-6 mt-2">
-                            <p className="text-sm lg:text-base leading-[160%] text-gray-700">The Afran Group Foundation is a registered non-profit based in Nairobi, Kenya, dedicated to protecting and empowering children who face violence, abuse, neglect, and exploitation. We were founded to break the silence surrounding child abuse and to ensure no child suffers in isolation.</p>
+                            <p className="text-sm lg:text-base leading-[160%] text-gray-700">The AFRAN Group Foundation is a registered non-profit based in Nairobi, Kenya, dedicated to protecting and empowering children who face violence, abuse, neglect, and exploitation. We were founded to break the silence surrounding child abuse and to ensure no child suffers in isolation.</p>
                             <p className="text-sm lg:text-base leading-[160%] text-gray-700">Our work is guided by Kenya&lsquo;s Children Act (2022), the UN Convention on the Rights of the Child, and regional human rights instruments. By combining direct care with systemic advocacy, we strengthen child protection systems in Kenya and across Africa.</p>
                         </div>
                         <Button variant={"link"} className="bg-yellow-dark mt-8 md:mt-6 px-8 py-4 w-fit font-medium text-black hover:text-black hover:cursor-pointer">Learn More</Button>

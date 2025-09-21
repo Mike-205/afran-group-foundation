@@ -16,9 +16,9 @@ export default function EmergencyContact() {
             available: "Available 24/7"
         },
         {
-            title: "Directorate of Criminal Investigation",
-            number: "0800 722 203",
-            description: "A law-enforcement unit investigating crimes against children and protecting children's rights.",
+            title: "Kenya Police Service",
+            number: "+254-703-042700",
+            description: "Emergency police contact for reporting crimes and seeking immediate assistance for child protection cases.",
             available: "Available 24/7"
         },
         {

@@ -38,9 +38,9 @@ const Navbar: React.FC = () => {
     return (
         <nav className="top-22 md:top-16 z-40 sticky bg-gray-white shadow-gray-700/8 shadow-md w-full h-16">
             <div className="mx-auto px-4 sm:px-6 lg:px-8 2xl:px-0 xl:px-10 max-w-7xl">
-                <div className="flex justify-between h-16">
+                <div className="flex justify-end gap-4 h-16">
                     {/* Logo and Brand Name */}
-                    <div className="flex items-center">
+                    <div className="flex items-center ml-0 mr-auto">
                         <div className="flex-shrink-0">
                             <Image
                                 src="/icons/logo.png"
