@@ -7,11 +7,11 @@ export const projects: { title: string; description: string; image: string }[] =
     {
         title: "Community Education & Awareness",
         description: "School programs, workshops, and campaigns that break the silence on child abuse, reduce stigma, and equip families with prevention tools.",
-        image: "/images/project-2.jpg"
+        image: "/images/image-9.jpg"
     },
     {
         title: "Policy Advocacy & Legal Reform",
         description: "Strategic advocacy and stakeholder engagement to strengthen child protection laws, build accountability, and drive systemic change.",
-        image: "/images/project-3.jpg"
+        image: "/images/image-10.jpg"
     },
 ]

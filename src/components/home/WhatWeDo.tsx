@@ -26,7 +26,7 @@ export default function WhatWeDo() {
     ];
 
     return (
-        <section className="bg-blue-100 mx-auto mb-12 px-6 md:px-8 2xl:px-0 py-12 md:py-16 w-full max-w-[120rem]">
+        <section className="bg-primary-100 mx-auto mb-12 px-6 md:px-8 2xl:px-0 py-12 md:py-16 w-full max-w-[120rem]">
             <div className="flex lg:flex-row flex-col mx-auto w-full max-w-7xl lg:gap-12">
                 <div className="my-4 lg:my-8 w-full max-w-[704px]">
                     <div className="flex items-center gap-3 md:gap-4 mb-6 md:mb-8">
@@ -54,7 +54,7 @@ export default function WhatWeDo() {
                     </div>
                 </div>
                 <div className="flex items-center justify-center lg:justify-end mx-auto px-4 2xl:px-0 w-full max-w-[480px] mt-6 lg:mt-8">
-                    <Image src={"/images/home-what-we-do.jpg"} alt="team celebrating in the open" width={480} height={658} className="rounded-3xl lg:w-full lg:h-5/6 object-cover" />
+                    <Image src={"/images/image-1.jpg"} alt="team celebrating in the open" width={480} height={658} className="rounded-3xl lg:w-full lg:h-5/6 object-cover" />
                 </div>
             </div>
         </section>
