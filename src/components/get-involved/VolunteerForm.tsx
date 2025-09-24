@@ -40,12 +40,12 @@ export default function VolunteerForm() {
                 </div>
                 <div>
                 <label className="block mb-2 font-medium text-foreground text-sm">Why do you want to volunteer?</label>
-                <textarea 
-                    placeholder="Tell us about your motivation and experience..." 
-                    className="w-full min-h-[100px]"
+                <textarea
+                    placeholder="Tell us about your motivation and experience..."
+                    className="w-full min-h-[100px] outline outline-gray-400 px-3 py-2 rounded-lg"
                 />
                 </div>
-                <Button variant="hero" className="w-full" size="lg">
+                <Button variant="hero" className="w-full hover:cursor-pointer bg-primary-400 text-white" size="lg">
                 Submit Application
                 </Button>
             </div>

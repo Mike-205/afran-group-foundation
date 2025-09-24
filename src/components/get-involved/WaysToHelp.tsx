@@ -12,7 +12,7 @@ export default function WaysToHelp() {
         icon: Heart,
         action: "Start Donating",
         badge: "Most Impact",
-        color: "emergency",
+        color: "red",
         link: "/donation"
         },
         {
@@ -21,7 +21,7 @@ export default function WaysToHelp() {
         icon: HandHeart,
         action: "Apply Now",
         badge: "Hands-on",
-        color: "primary",
+        color: "darkblue",
         link: "#volunteer-opportunities"
         },
         {
@@ -30,7 +30,7 @@ export default function WaysToHelp() {
         icon: DollarSign,
         action: "Start Fundraising",
         badge: "Community",
-        color: "success",
+        color: "green",
         link: "/contact"
         },
         {
@@ -39,7 +39,7 @@ export default function WaysToHelp() {
         icon: Megaphone,
         action: "Join Advocates",
         badge: "Systemic Change",
-        color: "accent",
+        color: "orange",
         link: "/contact"
         },
         {
@@ -48,7 +48,7 @@ export default function WaysToHelp() {
         icon: Users,
         action: "Partner With Us",
         badge: "Business",
-        color: "primary",
+        color: "darkblue",
         link: "/contact"
         },
         {
@@ -57,35 +57,35 @@ export default function WaysToHelp() {
         icon: Share2,
         action: "Share Now",
         badge: "Education",
-        color: "success",
+        color: "green",
         link: "/contact"
         }
     ];
 
     return (
         <section>
-        <div className="mx-auto px-4 container">
-        <h2 className="mb-12 font-bold text-foreground text-4xl text-center">Ways to Help</h2>
-        <div className="gap-8 grid md:grid-cols-2 lg:grid-cols-3 mx-auto max-w-7xl">
-            {ways.map((way, index) => (
-            <Card key={index} className="bg-card shadow-medium hover:shadow-strong p-8 border-0 transition-all duration-300">
-                <div className="flex justify-between items-start mb-6">
-                <way.icon className={`h-12 w-12 text-${way.color}`} />
-                <Badge variant={way.color === 'primary' ? 'default' : 'secondary'}>
-                    {way.badge}
-                </Badge>
+            <div className="mx-auto px-4 container">
+                <h2 className="mb-12 font-bold text-foreground text-4xl text-center">Ways to Help</h2>
+                <div className="gap-8 grid md:grid-cols-2 lg:grid-cols-3 mx-auto max-w-7xl">
+                    {ways.map((way, index) => (
+                    <Card key={index} className="bg-card shadow-medium hover:shadow-strong p-8 border-0 transition-all duration-300">
+                        <div className="flex justify-between items-start mb-6">
+                        <way.icon className={`h-12 w-12 ${way.color === "red" ? "text-error-500": way.color === "darkblue" ? "text-blue-950" : way.color === "green" ? "text-green-500" : "text-orange-500"}`} />
+                        <Badge variant={way.color === 'primary' ? 'default' : 'secondary'}>
+                            {way.badge}
+                        </Badge>
+                        </div>
+                        <h3 className="mb-4 font-bold text-foreground text-2xl">{way.title}</h3>
+                        <p className="mb-6 text-muted-foreground leading-relaxed">
+                        {way.description}
+                        </p>
+                        <Button variant={way.color === 'emergency' ? 'emergency' : 'outline'} className={`hover:text-white w-full ${way.title === "Monthly Donation" ? "bg-red-400 text-white hover:bg-red-500" : "hover:bg-primary-500"}`}>
+                            <Link href={way.link} className={"w-full"}>{way.action}</Link>
+                        </Button>
+                    </Card>
+                    ))}
                 </div>
-                <h3 className="mb-4 font-bold text-foreground text-2xl">{way.title}</h3>
-                <p className="mb-6 text-muted-foreground leading-relaxed">
-                {way.description}
-                </p>
-                <Button variant={way.color === 'emergency' ? 'emergency' : 'outline'} className="w-full">
-                    <Link href={way.link}>{way.action}</Link>
-                </Button>
-            </Card>
-            ))}
-        </div>
-        </div>
+            </div>
         </section>
     )
 }

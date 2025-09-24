@@ -17,7 +17,7 @@ export default function Hero() {
                     </div>
                 </div>
                 <div className="flex justify-center mx-auto px-4 2xl:px-0 w-full max-w-[476px] max-h-[384px]">
-                    <Image src={"/images/image-6.jpg"} alt="team celebrating in the open" width={476} height={384} className="rounded-3xl object-cover" />
+                    <Image src={"/images/image-1.jpg"} alt="team celebrating in the open" width={476} height={384} className="rounded-3xl object-cover" />
                 </div>
             </div>
         </section>
