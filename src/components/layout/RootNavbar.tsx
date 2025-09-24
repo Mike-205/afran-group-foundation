@@ -14,6 +14,7 @@ const Navbar: React.FC = () => {
         { name: "About", href: "/about" },
         { name: "What We Do", href: "/what-we-do" },
         { name: "Resources", href: "/resources" },
+        { name: "Get Involved", href: "/get-involved" },
         { name: "Contact", href: "/contact" }
     ]
 
@@ -40,7 +41,7 @@ const Navbar: React.FC = () => {
             <div className="mx-auto px-4 sm:px-6 lg:px-8 2xl:px-0 xl:px-10 max-w-7xl">
                 <div className="flex justify-end gap-4 h-16">
                     {/* Logo and Brand Name */}
-                    <div className="flex items-center ml-0 mr-auto">
+                    <div className="flex items-center mr-auto ml-0">
                         <div className="flex-shrink-0">
                             <Image
                                 src="/icons/logo.png"
