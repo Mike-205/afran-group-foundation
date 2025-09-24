@@ -34,7 +34,7 @@ export default function Footer() {
                         />
                     </div>
                     <div className="flex flex-col ml-2">
-                        <span className="font-semibold text-primary-500 text-lg lg:text-xl leading-tight">AFRAN Group</span>
+                        <span className="font-semibold text-primary-500 text-lg lg:text-xl leading-tight">The AFRAN Group</span>
                         <span className="font-medium text-secondary-500 text-xs lg:text-sm leading-tight">Foundation</span>
                     </div>
                 </div>
