@@ -10,7 +10,7 @@ export default function Hero() {
                         <h2 className="text-secondary-400 font-semibold">WHAT WE DO</h2>
                     </div>
                     <div className="flex flex-col justify-end gap-4 ml-8 md:ml-[88px]">
-                        <h1 className="text-gray-black max-w-[461px] font-bold lg:text-[56px] text-2xl md:text-4xl leading-[120%]">We are working Across the country</h1>
+                        <h1 className="text-gray-black max-w-[461px] font-bold lg:text-[56px] text-2xl md:text-4xl leading-[120%]">We are working across the country</h1>
                         <div className="space-y-4 md:mt-6">
                             <p className="text-gray-700 text-sm lg:text-base leading-[160%]">Breaking the cycle of abuse through advocacy, education, and unwavering support for survivors across Kenya and Africa. To create a safe world for all children by preventing child abuse, empowering survivors, and advocating for systemic change that protects the most vulnerable in our communities.</p>
                         </div>
