@@ -14,7 +14,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "AFRAN Group Foundation",
+  title: "The AFRAN Group Foundation",
   description: "Empowering Communities, Transforming Lives",
   icons: {
     icon: "/icons/logo.png",
